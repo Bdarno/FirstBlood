@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>99乘法表</title>
+    <!--<script type="text/javascript" src="scripts/jquery-1.3.1.js" />-->
+    <script type="text/javascript" >
+        window.onload =function () {
+            document.getElementById("btnCreate").onclick =function () {
+                document.write("<table border=\"1\" cellpadding=\"10\" cellspacing=\"0\">");
+                for (var i = 1; i < 10; i++) {
+                    document.write("<tr>")
+                    for (var j = i; j < 10; j++) {
+                        document.write("<td>"+i+"x"+j+"="+i*j+"</td>")
+                    }
+                    document.write("</tr>")
+                }
+                document.write("</table>");
+                return false;
+            }
+        }
+
+
+
+    </script>
+</head>
+<body>
+        <input type="button" id="btnCreate" name="btnCreate" value="创建99乘法表">
+
+</body>
+</html>
